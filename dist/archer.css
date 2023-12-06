@@ -1,0 +1,261 @@
+/*!
+ * Archer Template (https://github.com/kiritoo9/archer-template)
+ * Author kiritoo9 on github (https://github.com/kiritoo9)
+ * Copyright 2023 
+ */
+
+:root,
+:root.light {
+    --main: #dcdde1;
+    --main-light: #f8f9fa;
+    --base-color: #63636e;
+    --font-color: #63636e;
+    --font-color-hover: #487eb0;
+    --color-grey: #DEDEDE;
+}
+
+:root.black {
+    --main: #151521;
+    --main-light: #1e1e2d;
+    --base-color: #dcdde1;
+    --font-color: #dcdde1;
+    --font-color-hover: #40739e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scrollbar-color: var(--main-light) var(--base-color) !important;
+    scrollbar-width: thin;
+    font-family: "Raleway", sans-serif !important;
+    background-color: var(--main) !important;
+}
+
+body::-webkit-scrollbar {
+    width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--main-light);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--base-color);
+    border-radius: 6px;
+    border: 3px solid var(--main-light);
+}
+
+/* global */
+.btn {
+    font-size: 13px !important;
+}
+
+/* form */
+input.form-control,
+select.form-control {
+    font-size: 12px;
+}
+
+.col-form-label {
+    font-size: 12px !important;
+}
+
+.form-control-plaintext {
+    font-size: 12px !important;
+    border-bottom: 1px solid var(--color-grey) !important;
+    padding: 5px !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none !important;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px 100px !important;
+}
+
+.navbar .nav-item.active a {
+    color: var(--font-color-hover) !important;
+    font-weight: bold;
+}
+
+.nav-item a.nav-link {
+    font-size: 15px;
+}
+
+.dropdown-menu a.dropdown-item {
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 10px 20px !important;
+    }
+}
+
+/* Main */
+#main {
+    width: 100%;
+    padding: 30px 350px;
+}
+
+#main a {
+    color: var(--font-color);
+}
+
+#main a:hover {
+    text-decoration: none;
+}
+
+#main a:hover h6,
+#main a:hover i {
+    color: var(--font-color-hover);
+}
+
+#main .box {
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--main-light);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main .box i {
+    font-size: 23px;
+    color: var(--font-color);
+}
+
+#main .box h6 {
+    color: var(--font-color);
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#main .col-sm-3 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    #main {
+        padding: 30px 150px;
+    }
+}
+
+@media (max-width: 700px) {
+    #main {
+        padding: 30px 20px;
+    }
+}
+
+/* table */
+table.table thead tr th {
+    background-color: var(--color-grey);
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+table.table thead tr th:first-child {
+    text-align: center;
+}
+
+table.table tbody tr td {
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+table.table tbody tr td:first-child {
+    text-align: center;
+}
+
+table.table tbody tr td a {
+    margin-right: 10px;
+    color: var(--font-color-hover);
+}
+
+/* content */
+.content {
+    width: 100%;
+    min-height: 300px;
+    background-color: var(--main-light);
+    border-top: 1px solid var(--color-grey);
+    padding: 5px 0px;
+}
+
+.content h6 {
+    font-size: 12px;
+}
+
+.content .header {
+    width: 100%;
+    height: auto;
+    padding: 20px 100px;
+}
+
+.content .header .middle-button {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content .header .left-button {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.content .header .pagination {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.content .header .pagination .p-left {
+    width: 70%;
+    text-align: right;
+    float: left;
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
+.content .header .pagination .p-right {
+    width: 25%;
+    float: left;
+}
+
+.content .header .pagination .clearfix {
+    clear: both;
+}
+
+.content.form {
+    width: 100%;
+    height: auto;
+    padding: 20px 100px;
+}
+
+@media (max-width: 880px) {
+    .content .header {
+        padding: 20px;
+    }
+
+    .content .header .left-button {
+        text-align: center;
+    }
+
+    .content .header .pagination .p-left {
+        width: 50%;
+    }
+
+    .content.form {
+        padding: 20px;
+    }
+}
